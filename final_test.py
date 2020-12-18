@@ -19,3 +19,27 @@ by dividing the sum by the length and print out the 'Average grade:'
 after it will then use the counter function with greater than formula to get the percent above average,
 then it will print 'Percent of grades above average:' answer
 """
+
+"""
+main
+	set file = "Final.txt"
+	set calculate_percent_above_average(file)
+
+define calculate_percent_above_average(file)
+	open the infile and set to read only
+	create the listGrades = each line of integars from the file 
+	close the infile
+	create the length = len(listGrades)
+	create gradesum = sum(listGrades)
+	create average = gradesum / length
+	print "Number of grades:", using length)
+	print "Average grade:", using average)
+	count function starting 0
+	for item in listGrades
+		if item less than average
+			counter += 1
+	create aboveAverage = counter divided by length
+	print"Percent of grades above average:" using aboveAverage
+
+main
+"""
