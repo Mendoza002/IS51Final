@@ -43,3 +43,25 @@ define calculate_percent_above_average(file)
 
 main
 """
+
+def main():
+	file = "Final.txt"
+	calculate_percent_above_average(file)
+
+def calculate_percent_above_average(file):
+	infile = open(file, "r")
+	listGrades = [int(line.rstrip()) for line in infile]
+	infile.close()
+	length = len(listGrades)
+	gradesum = sum(listGrades)
+	average = gradesum / length
+	print("Number of grades:", length)
+	print("Average grade:", average)
+	counter = 0
+	for item in listGrades:
+		if item > average:
+			counter += 1
+	aboveAverage = counter / length
+	print("Percent of grades above average:", "{0:.2%}".format(aboveAverage))
+
+main()
